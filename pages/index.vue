@@ -66,3 +66,8 @@
     </v-container>
   </v-card>
 </template>
+<style scoped>
+span {
+  font-family: monospace;
+}
+</style>
