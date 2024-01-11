@@ -49,4 +49,7 @@
 definePageMeta({
   layout: "global",
 });
+
+const { $runtimeConfig } = useNuxtApp();
+console.log($runtimeConfig.DEPLOYMENT_TARGET);
 </script>
