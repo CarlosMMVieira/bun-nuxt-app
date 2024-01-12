@@ -5,8 +5,10 @@ export default defineNuxtConfig({
     transpile: ["vuetify"],
   },
   runtimeConfig: {
+    public: {
+      DEPLOYMENT_TARGET: process.env.NUXT_PUBLIC_DEPLOYMENT_TARGET,
+    },
     // Define your runtime configuration variables here
-    DEPLOYMENT_TARGET: process.env.NUXT_PUBLIC_DEPLOYMENT_TARGET,
     // ... other variables
   },
   modules: [

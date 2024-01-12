@@ -51,5 +51,5 @@ definePageMeta({
 });
 
 const { $runtimeConfig } = useNuxtApp();
-console.log($runtimeConfig.DEPLOYMENT_TARGET);
+console.log($runtimeConfig.public.DEPLOYMENT_TARGET);
 </script>
