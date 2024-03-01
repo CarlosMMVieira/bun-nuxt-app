@@ -18,6 +18,8 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }));
       });
     },
+    "@nuxtjs/i18n",
+
     //...
   ],
   vite: {
@@ -31,4 +33,7 @@ export default defineNuxtConfig({
     "~/plugins/01.runtime-config.ts",
     // ... other plugins
   ],
+  i18n: {
+    vueI18n: "./i18n.config.ts", // if you are using custom path, default
+  },
 });
